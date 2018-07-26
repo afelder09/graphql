@@ -1,0 +1,8 @@
+#endpoint: ''
+endpoint: https://us1.prisma.sh/anson-felder/hackernews-node/dev
+datamodel: datamodel.graphql
+secret: mysecret123
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
